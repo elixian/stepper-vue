@@ -12,6 +12,6 @@ export default Vue.extend({
 
 <template>
   <div id="app">
-    <stepper-vue :active-page="2" />
+    <stepper-vue :active-page="2" :totalPage="10" :CustomStyle="{bg:'crimson',height:'6px'}" />
   </div>
 </template>

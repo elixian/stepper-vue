@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="stepper" :style="{ width: percentStage + '%' }"></div>
+    <div id="stepper" :style="`width: ${percentStage}%; background:${CustomStyle.bg}; height:${CustomStyle.height}; `"></div>
   </div>
 </template>
 
@@ -17,6 +17,15 @@ export default {
         type: Number,
         default:3,
       },
+      CustomStyle:{
+        type:Object,
+        default:()=>{
+          return {
+            bg: 'rgb(225, 68, 240)',
+            heigh: '2px'
+          }
+        }
+      }
     },
   computed:{
     percentStage(){
@@ -28,14 +37,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$primary-color: rgb(225, 68, 240);
 #stepper {
   position: absolute;
   top: 0;
   left: 0;
-  height: 2px;
-  width: 0%;
-  background: $primary-color;
   transition: width 1s ease-out;
 }
 

@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/elixian/stepper-vue.svg?branch=main)](https://travis-ci.org/elixian/stepper-vue)
