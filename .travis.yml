@@ -1,4 +1,10 @@
-language: ruby
-rvm:
- - 2.2
- - jruby
+language: node_js
+node_js:
+ - 12.18.4
+ 
+cache:
+  directories:
+    -node_modules
+scritp:
+  -npm run serve
+  -npm run build
