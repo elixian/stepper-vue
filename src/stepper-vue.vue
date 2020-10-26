@@ -22,7 +22,7 @@ export default {
         default:()=>{
           return {
             bg: 'rgb(225, 68, 240)',
-            heigh: '2px'
+            height: '2px'
           }
         }
       }
