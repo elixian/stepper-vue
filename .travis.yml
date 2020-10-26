@@ -2,14 +2,20 @@ language: node_js
 node_js:
  - "node"
 
-cache: npm
+
+cache:
+  directories:
+    - node_modules
 
 jobs:
   include:
     - stage: test
       script: npm run test:unit
-
     - stage: build  
       script: npm run build
+      deploy:
+        provider: npm
+        email: "NPM_EMAIL"
+        api_key: "NPM_AUTH"
 
 
