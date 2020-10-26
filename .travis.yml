@@ -3,13 +3,10 @@ node_js:
  - "node"
 
 
-cache:
-  directories:
-    - node_modules
+cache: npm
 
 jobs:
   include:
-    - stage: test
       script: npm run test:unit
     - stage: build  
       script: npm run build
