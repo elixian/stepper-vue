@@ -11,6 +11,7 @@ export default {
       activePage: {
         type: Number,
         default: 1,
+
       },
       totalPage: {
         type: Number,
