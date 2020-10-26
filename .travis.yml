@@ -1,17 +1,14 @@
 language: node_js
 node_js:
  - "12"
-
 script: 
   - npm run test:unit
-
 after_success: 
   - npm run build
-
 deploy:
   provider: npm
-  email: "$NPM_EMAIL"
-  api_key: "$NPM_AUTH"
+  email: alphacentorus@gmail.com
+  api_key: $NPM_AUTH
   on:
     branch: main
 
