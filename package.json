@@ -1,6 +1,6 @@
 {
   "name": "stepper-vue",
-  "version": "1.1.10",
+  "version": "1.1.11",
   "description": "",
   "main": "dist/stepper-vue.ssr.js",
   "browser": "dist/stepper-vue.esm.js",
@@ -22,7 +22,7 @@
     "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife",
-    "push:master": "grunt bump",
+    "push:master": "npm grunt bump",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {},
