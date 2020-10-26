@@ -5,14 +5,12 @@ node_js:
 
 cache: npm
 
-jobs:
-  include:
-      script: npm run test:unit
-    - stage: build  
-      script: npm run build
-      deploy:
-        provider: npm
-        email: "NPM_EMAIL"
-        api_key: "NPM_AUTH"
+
+script: npm run test:unit
+script: npm run build
+deploy:
+  provider: npm
+  email: "NPM_EMAIL"
+  api_key: "NPM_AUTH"
 
 
