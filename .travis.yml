@@ -20,8 +20,8 @@ jobs:
         on:
           tags: true
 branches:
-only:
-  - main
-  - /^v[0-9]+.*$/
+  only:
+    - main
+    - /^v[0-9]+.*$/
 
 
